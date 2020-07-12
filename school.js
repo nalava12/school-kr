@@ -181,6 +181,7 @@ class School {
           res[meal.date] = meal.menu || (option.default || '');
         }
       });
+      res.length = mealData.filter(x => x).length + 1
 
       res.year = year;
       res.month = month;
@@ -283,6 +284,7 @@ class School {
           res[calendar.date] = calendar.event || (option.default || '');
         }
       });
+      res.length = calendarData.filter(x => x.date !== 'NaN').length + 1
 
       // 년도, 월, 오늘 날짜, 오늘의 학사일정 값을 상황에 맞게 추가합니다.
       res.year = year;

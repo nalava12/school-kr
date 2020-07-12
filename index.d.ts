@@ -78,6 +78,7 @@ declare module 'school-kr' {
     month: number;
     day: number;
     today: string;
+    length: number;
   }
 
   interface CalendarReturnType extends Day {
@@ -85,6 +86,7 @@ declare module 'school-kr' {
     month: number;
     day: number;
     today: string;
+    length: number;
   }
 
   export default class School {
