@@ -73,7 +73,7 @@ declare module 'school-kr' {
     address: string;
   }
 
-  interface MealRetuenType extends Day {
+  interface MealReturnType extends Day {
     year: number;
     month: number;
     day: number;
@@ -92,7 +92,7 @@ declare module 'school-kr' {
     static Region: IRegion;
 
     init(type: Symbol, region: Symbol, schoolCode: string): void;
-    getMeal(year?: Year, month?: number): Promise<MealRetuenType>;
+    getMeal(year?: Year, month?: number): Promise<MealReturnType>;
     getCalendar(year?: Year, month?: number): Promise<CalendarReturnType>;
 
     search(region: Symbol, name: string): Promise<Array<SearchReturnType>>
