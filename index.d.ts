@@ -73,7 +73,7 @@ declare module 'school-kr' {
     address: string;
   }
 
-  interface MealReturnType extends Day {
+  interface MealReturnType extends Day, ArrayLike<string> {
     year: number;
     month: number;
     day: number;
@@ -81,7 +81,7 @@ declare module 'school-kr' {
     length: number;
   }
 
-  interface CalendarReturnType extends Day {
+  interface CalendarReturnType extends Day, ArrayLike<string> {
     year: number;
     month: number;
     day: number;
